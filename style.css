@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Kia-sig';
+    src: url('./assets/font/KiaSignatureRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Kia-sig', Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+    transition: background-color 100ms ease-in;
+}
+header:hover {
+    background-color: #fff;
+}
+
+header:hover > * {
+    color: #000!important;
+}
+
+header .container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+header .left,
+header .end {
+    color: inherit;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+header .mid {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+header .mid a {
+    color: inherit;
+}
+
+header .mid svg {
+    color: inherit;
+    fill: #fff;
+}
+
+header:hover .mid svg {
+    fill: #000;
+}
+
+header .end {
+    justify-content: flex-end;
+}
+
+header .header-menus {
+    display: flex;
+    align-items: stretch;
+    margin-left: -20px;
+}
+
+header .menu-item {
+    display: inline-flex;
+    align-items: stretch;
+}
+
+header  .menu-item a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+header .header-menus .menu-item a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    left: 20px;
+    right: 20px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: center center;
+    transition: transform 200ms ease;
+}
+
+header  .header-menus .menu-item:hover a::before {
+    transform: scaleX(1);
+}
+
+.sl-flex {
+    display: flex!important;
+}
+
+.sl-items-center {
+    align-items: center!important;
+}
+
+.sl-text-sm {
+    font-size: 12px;
+}
+
+.sl-me-sm {
+    margin-right: 4px;
+}
+.sl-block {
+    display: block;
+}
+
+.sl-hover-textDecoration--underline:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    height: 900px;
+    position: relative;
+}
+
+#hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
