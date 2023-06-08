@@ -24,6 +24,13 @@ a {
     color: inherit;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 header {
     height: 80px;
     display: flex;
@@ -141,6 +148,14 @@ header .header-menus .menu-item:hover a::before {
 
 .sl-block {
     display: block;
+}
+
+.sl-relative {
+    position: relative;
+}
+
+.sl-absolute {
+    position: absolute;
 }
 
 .sl-hover-textDecoration--underline:hover {
